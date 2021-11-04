@@ -1,5 +1,5 @@
 package io.turntabl.enums;
 
 public enum Levels {
-    GOLD, PLATINUM, PREMIUM
+    GOLD, PLATINUM, PREMIUM, UNLIMITED
 }
