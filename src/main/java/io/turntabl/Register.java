@@ -28,7 +28,15 @@ public class Register {
     }
 
     public String getNameById(int id) {
-        return clientRegister.stream().filter(a -> a.getID() == id).findFirst().toString();
+        StringBuilder sb = new StringBuilder();
+        for (Client c: clientRegister) {
+            if (c.getID() == id) {
+                sb = new StringBuilder(c.getName());
+            }
+
+        }
+        return sb.toString();
+//        return clientRegister.stream().filter(a -> a.getID() == id).findFirst().toString();
     }
 
     public void countOfClientsAtServiceLevel() {
